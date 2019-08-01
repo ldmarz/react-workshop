@@ -9,3 +9,4 @@
 - [Especificar hijos con JSX](./doc/jsx/CHILDREN.md)
 - [ReactJS sin JSX](./doc/jsx/NOJSX.md)
 - [Estilos dentro de JSX](./doc/jsx/STYLE.md)
+- [Composición de componentes con JSX](./doc/jsx/COMPOSITION.md)
