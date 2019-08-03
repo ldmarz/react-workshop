@@ -11,3 +11,6 @@
 - [Estilos dentro de JSX](./doc/jsx/STYLE.md)
 - [Tipos de componentes](./doc/jsx/TYPES.md)
 - [Composición de componentes con JSX](./doc/jsx/COMPOSITION.md)
+## Dataflow
+- [Props](./doc/dataflow/PROPS.md)
+- [State](./doc/dataflow/STATE.md)
