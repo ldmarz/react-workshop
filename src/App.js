@@ -28,6 +28,7 @@ class App extends Component {
   }
 
   render() {
+
     const { color, laberToggle, showColorBox } = this.state;
     return (
       <div className="App">

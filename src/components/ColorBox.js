@@ -24,10 +24,10 @@ class ColorBox extends Component {
     }
 
     render() {
-        console.log('Render');
         const { color } = this.props;
         return (
-          <div className="color-box" style={{ backgroundColor: color, width: '100px', height: '100px' }}>
+            // eslint-disable-next-line max-len
+          <div className="color-box" style={{ backgroundColor: color, width: '300px', height: '300px' }}>
             {color}
           </div>
         );
