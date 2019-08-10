@@ -7,7 +7,7 @@ class Button extends Component {
 
   render() {
     return (
-      <button className="button_roll" onClick={this.props.onClick} ref={this.props.buttonRef} >{this.props.text}</button>
+      <button className="button__roll" onClick={this.props.onClick} ref={this.props.buttonRef} >{this.props.text}</button>
     );
   }
 }

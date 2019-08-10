@@ -18,4 +18,7 @@
 - [Componentes de alto orden](./doc/components-composition/HOC.md)
 - [Atajar errores](./doc/components-composition/ERRORBOUNDERIES.md)
 - [Referencias y el DOM](./doc/components-composition/REFANDDOM.md)
-
+## Mejoras de desempeño
+- [shouldComponentUpdate y PureComponent](./doc/performance/SHOULDUPDATE.md)
+- [Inmutabilidad](./doc/performance/INMUTABLE.md)
+- [Listas y keys](./doc/performance/KEYS.md)

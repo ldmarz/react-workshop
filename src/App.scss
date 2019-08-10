@@ -56,11 +56,22 @@ $font-color: #333;
   }
 }
 
-.button_roll {
-  background-color: cornflowerblue;
-  width: 100%;
-  border-radius: 4px;
-  padding: 8px;
-  font-size: 20px;
-  color: white;
+.button {
+  &__roll {
+    background-color: cornflowerblue;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+  }
+
+  &__count {
+    background-color: gold;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 20px;
+    color: brown;
+  }
 }
