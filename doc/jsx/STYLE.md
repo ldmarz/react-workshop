@@ -1,20 +1,20 @@
 # Estilos dentro de JSX
 Ya en el setup creamos un archivo que llamamos `App.scss` que contiene unos pocos estilos, pero podemos agregar muchos mas, pero JSX nos permite agreagar estilos dentro del codigo JavaScript en forma de un objeto.
-```
+```javascript
 <div className="App">
   <h1>Hola, {formatUserName(user)}! </h1>
   <img src={user.avatar} />
 </div>
 ```
 Para agregar estilos a los elementos que ya hicimos basta con crear un objeto.
-```
+```javascript
 const h1Style = {
   backgroudColor: 'red',
 };
 ```
 Como pueden observar, estamos modificando el parametro CSS `background-color`, pero para modificarlo dentro de JSX solo basta con transformar su nombre a `camelCase`.
 `background-color` ahora lo llamamos `backgroudColor`dentro del objeto de estilos y le pasamos este objeto como atributo a `h1`.
-```
+```javascript
 <div className="App">
   <h1 style={h1Style}>Hola, {formatUserName(user)}! </h1>
   <img src={user.avatar} />

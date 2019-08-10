@@ -1,6 +1,6 @@
 # Especificar hijos con JSX
 Como podemos observar, al un tag estar vacio lo cerramos con `/>`, pero si queremos que ese elemento tenga hijos, basta con meterlos dentro y cerrar el tag como un elemento HTML comun y corriente. Tal cual como hicimos con el `div`
-```
+```javascript
 <div className="App">
   <h1>Hola, {formatUserName(user)}! </h1>
   <img src={user.avatar} />

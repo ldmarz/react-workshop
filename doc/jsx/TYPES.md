@@ -1,7 +1,7 @@
 # Tipos de componentes
 Esencialmente existen 2 tipos de componentes, los componentes de funcion y los componentes de clase. Se diferencian principalmente por su declaracion
 ## Class component
-```
+```javascript
 class App extends Component {
   render() {
     return (
@@ -18,7 +18,7 @@ class App extends Component {
 Este es un componente con el cual se le pueden incluir funciones (ciclo de vida) para interactuar de forma más detallada con su estado y sus propiedades.
 
 ## Function components
-```
+```javascript
 const Avatar = (props) => (
   <img className="Avatar" src={props.picture} />
 );

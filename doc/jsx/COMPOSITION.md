@@ -1,7 +1,7 @@
 # Composición de componentes con JSX
 Podemos separar los componentes en distintas secciones y luego unirlos para crear un super componente.
 Tenemos hasta ahora dos componentes que por ahora lo unico que hacen es renderizar el avatar del usuario y darle la bienvenida.
-```
+```javascript
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import './App.scss';
@@ -38,7 +38,7 @@ export default hot(module)(App);
 Facilmente podemos separar las logicas, los markups y los estilos de estos componentes, y luego unirlos formando un componente cuyas partes estan muy bien denotadas y separadas.
 Dentro de nuestra carpeta `src` creamos la carpeta `components`, y dentro de `components` los archivos `Avatar.js` y `Greeting.js`, y procedemos a separar nuestras logicas.
 ## Avatar.js
-```
+```javascript
 // Avatar.js
 import React from 'react';
 
@@ -49,7 +49,7 @@ const Avatar = (props) => (
 export default Avatar;
 ```
 ## Greeting.js
-```
+```javascript
 // Greeting.js
 import React from 'react';
 
@@ -71,7 +71,7 @@ export default Greeting;
 ```
 Luego de esto, basta con importar los componentes en nuestro componente principal `App.js`, que quedaría algo así:
 ## App.js
-```
+```javascript
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import './App.scss';

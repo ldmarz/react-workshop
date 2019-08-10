@@ -1,0 +1,56 @@
+{
+    "today": [
+        {
+            "id": 0,
+            "topic": "Hacer café",
+            "isDone": true
+        },
+        {
+            "id": 1,
+            "topic": "Pasear a los perros",
+            "isDone": true
+        },
+        {
+            "id": 2,
+            "topic": "Dar de comer a los perros",
+            "isDone": true
+        },
+        {
+            "id": 3,
+            "topic": "Ir al workshop",
+            "isDone": true
+        },
+        {
+            "id": 4,
+            "topic": "Dar algo mejor que un TODO list",
+            "isDone": false
+        }
+    ],
+    "tomorrow": [
+        {
+            "id": 0,
+            "topic": "Hacer café",
+            "isDone": false
+        },
+        {
+            "id": 1,
+            "topic": "Pasear a los perros",
+            "isDone": false
+        },
+        {
+            "id": 2,
+            "topic": "Dar de comer a los perros",
+            "isDone": false
+        },
+        {
+            "id": 3,
+            "topic": "Terminar Mario Odyssey",
+            "isDone": false
+        },
+        {
+            "id": 4,
+            "topic": "Llorar porque no di algo mejor que un TODO list",
+            "isDone": false
+        }
+    ]
+}

@@ -1,6 +1,66 @@
 $app-font-family: Arial, Helvetica, sans-serif;
+$border-color: lightgray;
+$font-color: #333;
 
 .App {
   margin: 1rem;
   font-family: $app-font-family;
+  color: $font-color;
+  overflow: scroll;
+  height: 8000px;
+}
+
+.list {
+  &__content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    border-bottom: 1px $border-color dotted;
+    padding: 8px;
+  }
+
+  &__item:first-child {
+    border-top: 1px $border-color dotted;
+  }
+
+  &__done {
+    text-decoration:line-through;
+  }
+
+  &__check {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__topic {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 4px;
+    vertical-align: super;
+  }
+}
+
+.error {
+  &__title {
+    color: brown;
+  }
+
+  &__details {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    color: brown;
+    font-size: 10px;
+  }
+}
+
+.button_roll {
+  background-color: cornflowerblue;
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 20px;
+  color: white;
 }

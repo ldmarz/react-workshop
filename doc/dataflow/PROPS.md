@@ -1,6 +1,6 @@
 # Props - Propiedades del componente
 Cuando hicimos el componente `App.js` utilizamos los `props`. Los `props` son las propiedades o atributos entrantes de un componente.
-```
+```javascript
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import './App.scss';
@@ -27,12 +27,12 @@ class App extends Component {
 export default hot(module)(App);
 ```
 En el `App.js` tenemos 2 componentes hijos de `App` que son `Avatar` y `Greeting`. Y a estos les estamos pasando atributos. A `Avatar` le estamos pasando `picture` y a `Greeting` le estamos pasando `firstName` y `lastName`.
-```
+```javascript
 <Greeting firstName={user.firstName} lastName={user.lastName} />
 <Avatar picture={user.avatar} />
 ```
 Ahora si observamos dentro de nuestros componentes hijos
-```
+```javascript
 // Avatar.js
 import React from 'react';
 
@@ -42,7 +42,7 @@ const Avatar = (props) => (
 
 export default Avatar;
 ```
-```
+```javascript
 // Greeting.js
 import React from 'react';
 

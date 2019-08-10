@@ -1,6 +1,6 @@
 # Les presentamos JSX
 Consideremos la siguiente declaración de esta variable:
-```
+```javascript
 const element = <h1>Hello, world!</h1>;
 ```
 Lo que le estamos asignando a la constante `element` no es HTML ni un string, es codigo JSX que puede parecer un HTML simple pero por detras tiene todo el poder de javascript.

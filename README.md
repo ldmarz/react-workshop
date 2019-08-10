@@ -14,3 +14,8 @@
 ## Dataflow
 - [Props](./doc/dataflow/PROPS.md)
 - [State](./doc/dataflow/STATE.md)
+## Components composition
+- [Componentes de alto orden](./doc/components-composition/HOC.md)
+- [Atajar errores](./doc/components-composition/ERRORBOUNDERIES.md)
+- [Referencias y el DOM](./doc/components-composition/REFANDDOM.md)
+
