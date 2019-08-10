@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import List from './List';
-import todoListService from '../service/todoList';
+import withTodoListService from "./withTodoListService";
+import List from "./List";
 
-class TodayList extends Component {
+export default withTodoListService(List, "today");
+
+/*class TodayList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,6 +28,4 @@ class TodayList extends Component {
       </div>
     );
   }
-}
-
-export default TodayList;
+}*/

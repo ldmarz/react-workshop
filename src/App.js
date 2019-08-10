@@ -12,8 +12,8 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="app">
-        <TodayList />
-        <TomorrowList />
+        <TodayList title="Lista para hoy"/>
+        <TomorrowList title={"Lista para mañana"}/>
       </div>
     );
   }
