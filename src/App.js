@@ -6,9 +6,16 @@ import axios from 'axios';
 class App extends Component {
   constructor(props) {
     super(props);
-
+    this.input = React.createRef();
     this.state = {
       items: []
+    }
+
+    this.handlerInput = this.handlerInput.bind(this);
+    this.callToML("iphone")
+    this.cardStyle = {
+      width: "600px",
+      height: "50px",
     }
   }
   /*
@@ -24,16 +31,50 @@ class App extends Component {
     - Agregar dentro del .nav-header el logo (https://http2.mlstatic.com/ui/navigation/4.5.0/mercadolibre/logo__large_plus@2x.png)
   */
 
+  handlerInput(event) {
+    console.log(event)
+    if (event.key === 'Enter') {
+      const value = this.input.current.value;
+      this.callToML(value)
+    }
+  }
+
+  callToML(value) {
+    axios.get(`https://api.mercadolibre.com/sites/MLC/search?q=${value}`)
+      .then(response => {
+        console.log(response.data.results)
+        this.setState({
+          input: value,
+          items: response.data.results
+        })
+      })
+  }
+
   render() {
     const {items} = this.state;
     return (
       <div className="App">
         <div className="nav-header">
-          { /* Aqui formulario buscador */ }
+          <input ref={this.input} onKeyDown={this.handlerInput}/>
         </div>
-        
 
-        {/* items.map(item => (<TuComponenteFila />)) */}
+        {
+          items.map(item => (
+            <div >
+              <div className={"rowContainer"}>
+                <div className={"pictureContainer"}>
+                  <img src={item.thumbnail} />
+                </div>
+
+                <div className={"textContainer"}>
+                  <div>
+                    {item.title}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
         
       </div>
     );

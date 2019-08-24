@@ -17,3 +17,19 @@ body {
   display: block;
   height: 50px;
 }
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pictureContainer {
+  flex: 1;
+  max-width: 200px
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 500px;
+}
